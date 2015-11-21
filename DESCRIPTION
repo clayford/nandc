@@ -1,0 +1,10 @@
+Package: nandc
+Type: Package
+Title: Size and Critical Region Calculations (n and c)
+Version: 0.1
+Date: 2015-11-21
+Authors@R: person("Clay", "Ford", , "joe.clayton.ford@gmail.com", role = c("cre", "aut"))
+Maintainer: Clay Ford <joe.clayton.ford@gmail.com>
+Description: Sample size and critical region calculations as presented in Probability and Statistical Inference (7th ed), chapters 6.8 and 9.1.
+License: CC
+LazyData: TRUE
