@@ -12,8 +12,9 @@
 #' @param direction less than or greater than
 #'
 #' @return cutoff (critical region boundary) and sample size given type I error,
-#' type II error, standard deviation, null mean, and alternative mean,
-#' @export
+#' type II error, standard deviation, null mean, and alternative mean.
+#'
+#' @references Hogg, R. V. and Tanis, E. A. (2006), \emph{Probability and Statistical Inference 7e}, Pearson, New Jersey.
 #'
 #' @examples
 #' # example 9.1-2
@@ -22,6 +23,8 @@
 #' meanSampCutoff(a = 0.05,b = 0.05,null = 1.5,alt = 1.7,sd = sqrt(0.09))
 #' # problem 9.1-7
 #' meanSampCutoff(a = 0.05,b = 0.10,null = 715,alt = 650,sd = 140, direction = "less.than")
+#'
+#' @export
 
 meanSampCutoff <- function(alpha,beta,null,alt,sd,
                          direction=c("greater.than","less.than")){
@@ -51,7 +54,8 @@ meanSampCutoff <- function(alpha,beta,null,alt,sd,
 #'
 #' @return cutoff (critical region boundary) and sample size given type I error,
 #' type II error, null proportion, and alternative proportion
-#' @export
+#'
+#' @references Hogg, R. V. and Tanis, E. A. (2006), \emph{Probability and Statistical Inference 7e}, Pearson, New Jersey.
 #'
 #' @examples
 #' # example 9.1-3
@@ -59,6 +63,8 @@ meanSampCutoff <- function(alpha,beta,null,alt,sd,
 #' direction = "less.than")
 #' # problem 9.1-11
 #' propSampCutoff(alpha = 0.05,beta = 0.1,null = 1/26,alt = 1/10)
+#'
+#' @export
 
 propSampCutoff <- function(alpha,beta,null,alt,
                          direction=c("greater.than","less.than")){
