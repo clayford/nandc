@@ -6,7 +6,12 @@ Date: 2015-11-21
 Authors@R: person("Clay", "Ford", , "joe.clayton.ford@gmail.com", role = c("cre", "aut"))
 Maintainer: Clay Ford <joe.clayton.ford@gmail.com>
 Description: Sample size and critical region calculations as presented in
-    Probability and Statistical Inference (7th ed).
+    Probability and Statistical Inference (7th ed), chapters 6.8 and 9.1. This 
+	package is not affiliated with the book or its authors and is intended for 
+	educational purposes only. 
 License: CC
 LazyData: TRUE
 RoxygenNote: 5.0.0
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr

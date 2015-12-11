@@ -2,7 +2,7 @@
 % Please edit documentation in R/samplesize.R
 \name{dmeanSampleSize}
 \alias{dmeanSampleSize}
-\title{difference in means sample size}
+\title{Difference in means sample size}
 \usage{
 dmeanSampleSize(moe, psd, conf = 0.95)
 }
@@ -19,7 +19,7 @@ Estimated sample size needed to estimate a difference in population
   means within a given margin of error. The sample size is for each group.
 }
 \description{
-difference in means sample size
+Difference in means sample size
 }
 \examples{
 dmeanSampleSize(moe = 1.26, psd = 19)

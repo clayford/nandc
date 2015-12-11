@@ -2,7 +2,7 @@
 % Please edit documentation in R/samplesize.R
 \name{meanSampleSize}
 \alias{meanSampleSize}
-\title{mean sample size}
+\title{Mean sample size}
 \usage{
 meanSampleSize(moe, sd, conf = 0.95)
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/samplesize.R
 \name{finitePropSampleSize}
 \alias{finitePropSampleSize}
-\title{proportion sample size - finite (known) population}
+\title{Proportion sample size - finite (known) population}
 \usage{
 finitePropSampleSize(N, moe, p = 0.5, conf = 0.95)
 }

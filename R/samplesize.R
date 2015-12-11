@@ -1,5 +1,5 @@
 
-#' mean sample size
+#' Mean sample size
 #'
 #' Calculate sample size needed to estimate a mean within a given margin of error.
 #'
@@ -26,7 +26,7 @@ meanSampleSize <- function(moe, sd, conf=0.95){
 }
 
 
-#' proportion sample size
+#' Proportion sample size
 #'
 #' Calculate sample size needed to estimate a proportion within a given margin
 #' of error.
@@ -55,7 +55,7 @@ propSampleSize <- function(moe, p=0.5, conf=0.95){
   ceiling(n)
 }
 
-#' proportion sample size - finite (known) population
+#' Proportion sample size - finite (known) population
 #'
 #' Calculate sample size needed to estimate a proportion within a given margin
 #' of error for a finite (known) population size.
@@ -89,7 +89,7 @@ finitePropSampleSize <- function(N, moe, p=0.5, conf=0.95){
 }
 
 
-#' difference in means sample size
+#' Difference in means sample size
 #'
 #' @param moe margin of error
 #' @param psd pooled estimate of the common standard deviation (assuming that
@@ -115,7 +115,7 @@ dmeanSampleSize <- function(moe, psd, conf=0.95){
 
 
 
-#' difference in proportions sample size
+#' Difference in proportions sample size
 #'
 #' @param moe margin of error
 #' @param p1 estimated proportion in group 1 (default = 0.5)
@@ -140,3 +140,5 @@ dpropSampleSize <- function(moe, p1=0.5, p2=0.5, conf=0.95){
   n <- (qnorm(p = (1 - conf)/2, lower.tail = FALSE) / moe)^2 * (p1 * (1 - p1) + p2 * (1 - p2))
   cat(ceiling(n), "per group \n")
 }
+
+

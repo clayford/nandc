@@ -2,10 +2,9 @@
 % Please edit documentation in R/n_and_c.R
 \name{propSampCutoff}
 \alias{propSampCutoff}
-\title{proportion sample size and cutoff}
+\title{Proportion sample size and cutoff}
 \usage{
-propSampCutoff(alpha, beta, null, alt, direction = c("greater.than",
-  "less.than"))
+propSampCutoff(alpha, beta, null, alt, direction = c("greater", "less"))
 }
 \arguments{
 \item{alpha}{Type I error}
@@ -16,25 +15,26 @@ propSampCutoff(alpha, beta, null, alt, direction = c("greater.than",
 
 \item{alt}{alternative proportion}
 
-\item{direction}{less than or greater than}
+\item{direction}{"greater" (default) or "less"}
 }
 \value{
-cutoff (critical region boundary) and sample size given type I error,
+Cutoff (critical region boundary) and sample size given type I error,
 type II error, null proportion, and alternative proportion
 }
 \description{
-given type I error, type II error, null proportion, and
-alternative proportion, return cutoff (critical region boundary) and sample size
+Given type I error, type II error, null proportion, and
+alternative proportion, return cutoff (critical region boundary) and sample size.
 }
 \examples{
 # example 9.1-3
 propSampCutoff(alpha = 0.05,beta = 0.1,null = 0.5,alt = 0.25,
-direction = "less.than")
+direction = "less")
 # problem 9.1-11
 propSampCutoff(alpha = 0.05,beta = 0.1,null = 1/26,alt = 1/10)
 
 }
 \references{
-Hogg, R. V. and Tanis, E. A. (2006), \emph{Probability and Statistical Inference 7e}, Pearson, New Jersey.
+Hogg, R. V. and Tanis, E. A. (2006), \emph{Probability and Statistical Inference 7e},
+Pearson, New Jersey. Chapter 9.1.
 }
 

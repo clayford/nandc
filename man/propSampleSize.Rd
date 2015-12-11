@@ -2,7 +2,7 @@
 % Please edit documentation in R/samplesize.R
 \name{propSampleSize}
 \alias{propSampleSize}
-\title{proportion sample size}
+\title{Proportion sample size}
 \usage{
 propSampleSize(moe, p = 0.5, conf = 0.95)
 }
