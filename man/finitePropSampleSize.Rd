@@ -9,11 +9,11 @@ finitePropSampleSize(N, moe, p = 0.5, conf = 0.95)
 \arguments{
 \item{N}{population size}
 
-\item{moe}{margin of error}
+\item{moe}{margin of error expressed as a proportion (0 < moe < 1)}
 
 \item{p}{estimated proportion (default = 0.5); leave as is for most conservative estimate.}
 
-\item{conf}{confidence level (default = 0.95)}
+\item{conf}{confidence level associated with margin of error (default = 0.95)}
 }
 \value{
 Estimated sample size needed to estimate a proportion within a given

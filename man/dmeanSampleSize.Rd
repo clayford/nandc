@@ -4,25 +4,28 @@
 \alias{dmeanSampleSize}
 \title{Difference in means sample size}
 \usage{
-dmeanSampleSize(moe, psd, conf = 0.95)
+dmeanSampleSize(moe, sd, conf = 0.95)
 }
 \arguments{
-\item{moe}{margin of error}
+\item{moe}{margin of error expressed in your measure's units}
 
-\item{psd}{pooled estimate of the common standard deviation (assuming that
-the variances in the populations are similar)}
+\item{sd}{the common standard deviation of the two populations expressed in your measure's units}
 
-\item{conf}{confidence level (default = 0.95)}
+\item{conf}{confidence level associated with margin of error (default = 0.95)}
 }
 \value{
-Estimated sample size needed to estimate a difference in population
-  means within a given margin of error. The sample size is for each group.
+Estimated sample size for each group.
 }
 \description{
-Difference in means sample size
+Calculate sample size (per group) needed to estimate a difference in means within a
+given margin of error. This function assumes the means come from
+Normal distributions with common variances. Those are big and likely untrue
+assumptions, therefore the estimated sample size should be treated as a rough estimate.
 }
 \examples{
-dmeanSampleSize(moe = 1.26, psd = 19)
+## Approximate sample size needed to estimate the difference in means between two
+## populations within 1.5 units, each with standard deviation 20 units.
+dmeanSampleSize(moe = 1.5, sd = 20)
 
 }
 \references{

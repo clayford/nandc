@@ -7,26 +7,31 @@
 dpropSampleSize(moe, p1 = 0.5, p2 = 0.5, conf = 0.95)
 }
 \arguments{
-\item{moe}{margin of error}
+\item{moe}{margin of error expressed as proportion (0 < moe < 1)}
 
 \item{p1}{estimated proportion in group 1 (default = 0.5)}
 
 \item{p2}{estimated proportion in group 2 (default = 0.5)}
 
-\item{conf}{confidence level (default = 0.95)}
+\item{conf}{confidence level associated with margin of error (default = 0.95)}
 }
 \value{
-Estimated sample size needed to estimate a difference in proportions
-  within a given margin of error. The sample size is for each group.
+Estimated sample size for each group.
 }
 \description{
-Difference in proportions sample size
+Calculate sample size (per group) needed to estimate a difference in proportions within a
+given margin of error. This function is derived from the classic approximate
+confidence interval formula for the difference in proportions (Hogg & Tanis, p. 383).
+The estimated sample size should be treated as a rough estimate.
 }
 \examples{
+## Approximate sample size needed to estimate the difference in proportions between two
+## binomial populations within 0.02, one with p = 0.11 and the other with p = 0.09.
 dpropSampleSize(moe = 0.02, p1 = 0.11, p2 = 0.09)
 
 }
 \references{
-Hogg, R. V. and Tanis, E. A. (2006), \emph{Probability and Statistical Inference 7e}, Pearson, New Jersey.
+Hogg, R. V. and Tanis, E. A. (2006), \emph{Probability and
+  Statistical Inference 7e}, Pearson, New Jersey.
 }
 

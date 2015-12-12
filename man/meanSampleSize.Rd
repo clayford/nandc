@@ -7,11 +7,11 @@
 meanSampleSize(moe, sd, conf = 0.95)
 }
 \arguments{
-\item{moe}{margin of error.}
+\item{moe}{margin of error expressed in your measure's units}
 
-\item{sd}{standard deviation.}
+\item{sd}{standard deviation expressed in your measure's units}
 
-\item{conf}{confidence level (default = 0.95)}
+\item{conf}{confidence level associated with margin of error (default = 0.95)}
 }
 \value{
 Estimated sample size needed to estimate a mean within a given margin
