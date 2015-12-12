@@ -1,4 +1,4 @@
-
+#
 #' Mean sample size
 #'
 #' Calculate sample size needed to estimate a mean within a given margin of error.
@@ -83,7 +83,7 @@ finitePropSampleSize <- function(N, moe, p=0.5, conf=0.95){
   if(moe < 0) stop("moe must be a positive number")
   if(p > 1) warning("p was entered as greater than 1")
   if(p < 0) warning("p was entered as less than 0")
-  m <- prop.sample.size(moe,p,conf)
+  m <- propSampleSize(moe,p,conf)
   n <- m / (1 + (m - 1)/N)
   ceiling(n)
 }
